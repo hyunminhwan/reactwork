@@ -1,0 +1,19 @@
+div{  /* div는 무조건 root를 의미 : <></>,<div></div>,<Fragment*/
+  background-color: rgb(2, 2, 110);
+  color: white;
+  padding:50px;
+  text-align: center;
+}
+
+h1{
+  color: red;
+}
+h3{
+  background-color: blueviolet;
+}
+.class1{
+  border: 2px dotted yellow;
+}
+#id1{
+  color: yellowgreen
+}

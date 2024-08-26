@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 
@@ -10,8 +9,7 @@ function App() {
   let [modal, setModal] = useState(false);
   let [modalIndex, setModalIndex] = useState(0);  //div의 index번호를 변경 [0,1,2]
   let [inputValue, setInputValue] = useState("");
-
-
+  
   return (
     <div className="App">
       <h2 className="title">맛집 추천 INSTAR</h2>
@@ -22,12 +20,12 @@ function App() {
         setTitle(copy);
         }}>글수정</button>
 
-{
-  
+{ 
         title.map(function(t, i) {
+
           return (
             <div className="list" key={i}>
-              <h4 onClick={() => {setModal(!modal); setModalIndex(i)}}>{t}</h4>
+              <h4 onClick={() => {setModal(!modal); setModalIndex(i);}}>{t}</h4>
 
               <p>8월 22일  <span onClick={() => {
                  let copy = [...count];

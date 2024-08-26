@@ -8,7 +8,7 @@ function App() {
   const [count,setCount] =useState(0);
   const [text, setText] =useState("");
 
-  function onChangeInput(e){
+  const onChangeInput=(e)=>{
     setText(e.target.value);
   }
 

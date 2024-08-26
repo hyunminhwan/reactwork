@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <section>
+       <section>{/*오빠메롱 */}
         <img src={logo} className="App-logo" alt="logo" />
       </section>
       <Footer />

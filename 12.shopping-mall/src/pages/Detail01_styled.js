@@ -34,7 +34,7 @@ let Btn = styled.button`
         <YellowBtn>버튼</YellowBtn>
         <Box>div</Box>
         <BlueBtn>블루버튼</BlueBtn>
-        <Btn>props 버튼</Btn>
+        <Btn >props 버튼</Btn>
         <Container>
         <Row>
             <Col lg={6}>

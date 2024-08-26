@@ -62,7 +62,7 @@ function App() {
               </>
             } />
            {/* <Route path='/detail' element={<Detail clothes={clothes}/>} />    하나의 페이지  */}
-            {/* <Route path='/detail' element={<Detail clothes={clothes}/>} />
+            {/* <Route path='/detail/1' element={<Detail clothes={clothes[1]}/>} />
             path에 파라미터로 넘겨줄 수 있음  
             path='/detail/:작명'
             */}

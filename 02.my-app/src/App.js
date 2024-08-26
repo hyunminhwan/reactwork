@@ -9,11 +9,10 @@
 //       <h3>의료용 디지털 영상 표준 활용 실무 프로젝트 과정 </h3>
 //       <p className="class1">reatc style 적용하기</p>
 //       <p id="id1">id로 style 적용하기</p>
-
-
 //     </div>    
 //   );
 // }
+
 /*
 function App() {
   const style ={

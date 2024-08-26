@@ -51,7 +51,7 @@ const Body = () =>{
     const btnPrrops={
         text : "1번버튼",
         color : "hotpink",
-        a:1,
+        a:"blue",
         b:2,
         c:3
     }

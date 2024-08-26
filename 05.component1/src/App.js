@@ -8,6 +8,7 @@ const user ={
 function Student(user){
   return user.firstName+""+user.lastName;
 }
+
 function App() {
   const isStudent = true;
   return (
@@ -26,6 +27,7 @@ function App() {
 
 function Com1(){
   return(
+
     <>
       <h2>[THIS IS COMPONENT]</h2>
       <p>K-Digital Training</p>

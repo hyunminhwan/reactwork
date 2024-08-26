@@ -1,14 +1,33 @@
 .App {
   text-align: center;
 }
-
-
-.main-bg {
+.main-bg{
   height: 750px;
-  background-image: url("./img/main.jpg");
+  background-image: url("../public/img/main.jpg");
   background-repeat: no-repeat;
 }
-
-#a {
+img{
   height: 400px;
+  width: 80%;
+}
+
+/* 
+
+.start {
+  opacity: 0;
+}
+
+.end{
+  opacity: 1;
+  transition: opacity 1s;
+} */
+
+/* 크기 */
+.start {
+  transform: scale(0);
+}
+
+.end{
+  transform: scale(1);
+  transition: all 1s;
 }

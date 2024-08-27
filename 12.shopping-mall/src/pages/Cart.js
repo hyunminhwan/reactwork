@@ -1,9 +1,11 @@
-import { Table,Button } from 'react-bootstrap';
+import { Table, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 // 변경시 1.
 // import { increase } from '../store/store';
 //userSlice로 분할 한 후 import
-import { increase } from '../store/userSlice';
+import { countUp, countDown,deleteCart } from '../store/store';
+import { useState } from 'react';
+// let [addtoCart,setaddtoCart]=useState();
 
 function Cart() {
     // let state =useSelector((state)=>{return state})
@@ -37,23 +39,33 @@ function Cart() {
                     </tr>
                 </thead>
                 <tbody>
-                {
-                    state.addtoCart.map(c => 
-                        <tr>
-                            <td>{c.id}</td>
-                            <td>{c.title}</td>
-                            <td>{c.count}</td>
-                            {/* <td>
-                                <Button variant="outline-secondary" onClick={() => {
-                                    dispatch(addCart())
-                                }}>
-                                   +
-                                </Button>
-                            </td> */}
-                        </tr>
-                    )
-                }
-                     {/* {
+                    {
+                        state.addtoCart.map(c =>
+                            <tr>
+                                <td>{c.id}</td>
+                                <td>{c.title}</td>
+                                <td>{c.count}</td>
+                                <td>
+                                    <Button variant="outline-secondary" onClick={() => {
+                                        dispatch(countUp(c))
+                                    }}>
+                                        +
+                                    </Button>
+                                    <Button variant="outline-secondary" onClick={() => {
+                                        dispatch(countDown(c))
+                                    }}>
+                                        -
+                                    </Button>
+                                    <Button variant="outline-secondary" onClick={()=>{
+                                        dispatch(deleteCart(c))
+                                    }}>
+                                        삭제하기
+                                    </Button>
+                                </td>
+                            </tr>
+                        )
+                    }
+                    {/* {
                         list.map((list) => {
                             return (
                                 <>
@@ -87,7 +99,7 @@ function Cart() {
 //                 <td>{p.list.title}</td>
 //                 <td>{p.list.count}</td>
 //                 <td>
-                    
+
 //                 </td>
 //             </tr>
 //         </>
